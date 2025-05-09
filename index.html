@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://demo2.techsseract.com/snakebite/webassets/images/newImages/images/foot-logo.png" alt="">
+      <div>
+        <h3>UTTAR PRADESH SNAKEBITE MITIGATION
+</h3>
+<h4>Office of Relief Commissioner, Govt Of Uttar Pradesh</h4>
+      </div>
+      </div>
+
+      
+      <input type="checkbox" id="menu-toggle" />
+      <label class="button" for="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+
+    
+      <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">Do's & Don'ts</a>
+        <a href="#">Support</a>
+        <a href="#">Our Work</a>
+        <a href="#">Register as trainee</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('scale-y-100');
+    });
+  </script>
+   
+    <div class="wrapper">
+  <div class="main-divs">
+    <img class="slide" src="https://101reporters.com/_next/image?url=https%3A%2F%2Fassets.ramen.101reporters.com%2Fimgs%2F2020%2F11%2F826*532%2F101RPT806410%2Fdistrict_hospital%2C_bijnor.webp&w=1920&q=100" alt="image">
+    <img class="slide" src="https://buscdn.cardekho.com/in/force/traveller-ambulance/force-traveller-ambulance-50802.jpg?impolicy=resize&imwidth=480" alt="image">
+    <img class="slide" src="https://im.rediff.com/news/2021/may/05varanasi-04.jpg" alt="image">
+  </div>
+</div>
+   <script>
+  const slides = document.querySelectorAll('.slide');
+  let mainDivs = document.querySelector('.main-divs');
+  let current = 0;
+
+  slides.forEach((slide, index) => {
+    slide.style.left = `${index * 100}%`;
+  });
+
+ 
+  setInterval(() => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * slides.length);
+    } while (randomIndex === current); 
+    current = randomIndex;
+    mainDivs.style.transform = `translateX(-${current * 100}%)`;
+  }, 2000);
+</script>
+
+
+
+
+   <div class="main-div">
+    <h2>UTTAR PRADESH AT THE HEART OF INDIA</h2>
+  <div class="container">
+    <div class="card-main">
+      <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202408/66c5f992e925e-uttar-pradesh-chief-minister-yogi-adityanath-212833607-16x9.png?size=948:533" alt="Yogi Adityanath text logo" />
+      <h3>UNDERSTANDING THE SNAKEBITE CRISIS</h3>
+      <h4>A Global to Local Perspective</h4>
+      <p>
+        Snakebite envenomation is a critical but often neglected public
+        health emergency. Globally, snakebites claim the lives of an estimated
+        81,000 to 138,000 people each year. South Asia bears the highest bur...
+      </p>
+      <a href="#">Read more</a>
+      <div class="decor-top"></div>
+      <div class="decor-bottom"></div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-orange"><i class="fas fa-image"></i></div>
+            <h4>Posters</h4>
+            <p>23771 +</p>
+          </div>
+          <div class="flip-back">
+            <h4>Types of Posters:</h4>
+            <ol>
+              <li>Awareness Posters at Ration Shops</li>
+              <li>Treatment Protocol Posters</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-green"><i class="fas fa-book"></i></div>
+            <h4>Information booklets</h4>
+            <p>100399 +</p>
+          </div>
+          <div class="flip-back">
+          <h4>
+            Information booklets
+          </h4>
+          <p>
+            Information booklets provide concise guidance on snakebite prevention and care.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-blue"><i class="fas fa-rocket"></i></div>
+            <h3>Training Sessions</h3>
+            <p>2 +</p>
+          </div>
+          <div class="flip-back">
+           <h4>
+            Training Sessions
+           </h4>
+           <p>
+            Training sessions were conducted in 18 districts to teach first-aid and antivenom protocols.
+           </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-gray"><i class="fas fa-hospital"></i></div>
+            <h4>SB Kit</h4>
+            <p>57722 +</p>
+          </div>
+          <div class="flip-back">
+            <h4>
+              Snake Bite Kit
+            </h4>
+            <p>Snake Bite Kits contain essential items for immediate field treatment and were distributed during training.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-brown"><i class="fas fa-theater-masks"></i></div>
+            <h4>Nukkad Natak</h4>
+            <p>12 +</p>
+          </div>
+          <div class="flip-back">
+         <h4>Nukkad Natak</h4>
+         <p>Nukkad Natak uses street theater to raise public awareness about snakebite safety and first-aid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <div class="icon-circle icon-purple"><i class="fas fa-user"></i></div>
+            <h4>Trainees</h4>
+            <p>3 +</p>
+          </div>
+          <div class="flip-back">
+           <h4>Trainees</h4>
+           <p>Trainees include ASHA workers, teachers, and volunteers certified to respond to snakebite emergencies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+
+
+ <div class="project-section">
+    <div class="project-container">
+      <div class="project-box">
+        <h1>INDIA’S BURDEN</h1>
+        <p>Within India, the challenge is more profound in states like Uttar Pradesh, Andhra Pradesh, Bihar, Tamil Nadu, West Bengal, and Maharashtra—the epicenters of snakebite fatalities.</p>
+        <p>The impact extends beyond health, causing long-term socio-economic hardship, with victims facing paralysis, kidney failure, and financial strain.</p>
+      </div>
+
+      <div class="project-box">
+        <h1>PROJECT OVERVIEW</h1>
+        <p>Snakebite envenomation is declared a State Disaster in UP, where agricultural belts and dense forests heighten human–snake encounters.</p>
+        <p>Our Mitigation Project drives prevention, rapid treatment, and community training—supported by ₹4 lakh relief and improved antivenom access.</p>
+      </div>
+
+      <div class="project-box">
+        <h1>OBJECTIVES</h1>
+        <p>This initiative aimed to address the pressing need for enhanced awareness and knowledge among health-care professionals, ultimately reducing fatalities and severe complications resulting from snakebites.</p>
+        <ul>
+          <li>Empower communities on prevention, first aid, and transport.</li>
+          <li>Train healthcare providers in snakebite management.</li>
+          <li>Implement India’s Standard Treatment Guidelines statewide.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<div class="training-section">
+   <div class="training-content">
+    <div class="training-header">
+      <h1>TRAINING INITIATIVE</h1>
+      <p>Empowering communities through training and awareness.</p>
+    </div>
+  <div class="training-container">
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-user-graduate"></i></div>
+      <div class="text">
+        <h3>State Level Training of Trainers (ToT)</h3>
+        <p>A noteworthy observation was the strong advocacy for modern medical interventions by Accredited Social Health Activists workers.</p>
+      </div>
+    </div>
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-school"></i></div>
+      <div class="text">
+        <h3>District-Level ToT</h3>
+        <p>These campaigns helped boost awareness about hygiene and preventive healthcare among rural populations.</p>
+      </div>
+    </div>
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-landmark"></i></div>
+      <div class="text">
+        <h3>Tehsil-Level ToT</h3>
+        <p>Training field workers resulted in improved outreach and health issue detection in remote regions.</p>
+      </div>
+    </div>
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-bullhorn"></i></div>
+      <div class="text">
+        <h3>Awareness Generation</h3>
+        <p>Mobile medical units provided care access in distant villages, reducing patient travel burden.</p>
+      </div>
+    </div>
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-mobile-alt"></i></div>
+      <div class="text">
+        <h3>Digital Outreach</h3>
+        <p>Regular immunization drives helped curb seasonal outbreaks and increased child health awareness.</p>
+      </div>
+    </div>
+
+    <div class="boxss">
+      <div class="icon-circle"><i class="fas fa-kit-medical"></i></div>
+      <div class="text">
+        <h3>Snakebite Kits Provision</h3>
+        <p>Distribution of first-aid kits through health camps improved emergency response in households.</p>
+      </div>
+    </div>
+ </div>
+  </div>
+</div>
+
+  <div class="section">
+    <div class="section-container">
+
+      <div class="boxs">
+        <h1>Findings</h1>
+        <img src="https://thumbs.dreamstime.com/b/indian-beautiful-female-doctor-18398918.jpg?w=992" alt="Image 1" />
+        <div class="text">
+          <h3>Community Health Officers (CHOs)</h3>
+          <p>A noteworthy observation was the strong advocacy for modern medical interventions by Accredited Social Health Activists workers.</p>
+        </div>
+        <button >Explore More</button>
+      </div>
+
+      <div class="boxs">
+        <h1>Success Stories</h1>
+        <img src="https://www.shutterstock.com/shutterstock/photos/2340800325/display_1500/stock-photo-gopalganj-bihar-india-june-health-worker-communicates-with-local-women-as-mothers-with-2340800325.jpg" alt="Image 2" />
+        <div class="text">
+          <h3>Touching experiences from our visits</h3>
+          <p>These families’ experiences highlighted the power of community education in promoting healthcare awareness.</p>
+        </div>
+         <button >Explore More</button>
+      </div>
+
+      <div class="boxs">
+        <h1>Faiths and Beliefs</h1>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg/800px-Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg" alt="Image 3" />
+        <div class="text">
+          <h3>Delving into the faiths and beliefs of people</h3>
+          <p>Our visit to the ram mandir was enlightening in many ways.We dedicated to temple-related items used in worship.</p>
+        </div>
+         <button >Explore More</button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="image-section">
+    <h1 style="text-align: center; color: white;">Our Work</h1>
+    <h2 style="text-align: center; margin-bottom: 10px; color: rgb(146, 19, 95);">Through our Snake Conservation and Snakebite Mitigation project, we work in multiple spheres towards mitigating the far reaching effects of this most neglected of tropical diseases.</h2>
+    <div class="container">
+      <div class="box">
+        <img src="https://cdn.create.vista.com/api/media/medium/231559364/stock-photo-business-colleagues-conference-meeting-room-presentation?token=" alt="Image 1" />
+        <div class="text">
+          <h3>
+Community Education and Capacity Building</h3>
+          <p>
+Along with our partners, we have conducted hundreds of workshops across India for school children, agricultural communities, Forest Department officials and others with a focus on living around snakes safely. The cornerstone of the program is the educational materials we have created that have been translated into several regional languages. These include short films on snake safety and first aid, posters and handouts. The material can be viewed and downloaded for use here –</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://madrascrocodilebank.org/static/img/con_research/technological_interventions.jpg" alt="Image 2" />
+        <div class="text">
+          <h3>Technological Interventions</h3>
+          <p>
+In collaboration with www.indiansnakes.org, we have been mapping occurrence of snakes, hospital locations and availability of snake rescuers through an android application. The results of this work can be viewed at http://tiny.cc/jfo2bz The app can be downloaded for use on the Google playstore – http://tiny.cc/snq2bz</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://madrascrocodilebank.org/static/img/con_research/surveys.jpg" alt="Image 3" />
+        <div class="text">
+          <h3>
+Epidemiological and Community Based Surveys</h3>
+          <p>
+In collaboration with the Health Department, Government of Uttar Pradesh, we have initiated a snakebite registry for hospitals across the state and are assisting with streamlining the data collection methodology We have initiated community level surveys in multiple districts of Uttar Pradesh that can be compared to the hospital datasets and fill in the gaps.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://media.gettyimages.com/id/1238573140/photo/a-man-holds-the-head-of-a-poisonous-snake-while-extracting.jpg?s=1024x1024&w=gi&k=20&c=Y1fPYAi2jYiTRJFpWvBDuUi2_FmZS-4st66oP2BVcCw=" alt="Image 4" />
+        <div class="text">
+          <h3>Venom Research</h3>
+          <p>
+In collaboration with the Evolutionary Venomics lab (www.venomicslab.com) at the Indian Institute of Science, and The Gerry Martin Project, we are investigating the extent of venom variation across geographic regions and snake species. We are also testing the efficacy of antivenom against these venoms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="important-links">
+        <h1>Important <span style="color: bisque;">Links</span></h1>
+        <div class="link-container">
+          <div class="link-item">
+            <div class="icon">
+                <img width="80px" height="70px" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Ministry_of_Health_India.svg" alt="">
+            </div>
+          </div>
+          <div class="link-item">
+            <div class="icon">
+                <img src="https://updescoaec.com/assets/img/rti-icon.gif" alt="">
+            </div>
+          </div>
+          <div class="link-item">
+            <div class="icon">
+                <img src="https://updescoaec.com/assets/img/indiaGov.gif" alt="">
+            </div>
+          </div>
+          <div class="link-item">
+            <div class="icon">
+                <img src="https://updescoaec.com/assets/img/mite.jpg" alt="">
+            </div>
+          </div>
+          <div class="link-item">
+            <div class="icon">
+              <img src="https://updescoaec.com/assets/img/upgov-icon.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+              <img width="100px" height="100px" src="http://demo2.techsseract.com/snakebite/webassets/images/logo/up-logo.svg" alt="">
+            <h3>Contact</h3>
+            <p>📞 +91 9454441070</p>
+          </div>
+          <div class="footer-col">
+              <h3>Important Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Do's & Don'ts</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Our Work</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Organizations</h3>
+            <ul>
+              <li><a href="#">Office of Relief Commissioner</a></li>
+              <li><a href="#">Govt. of Uttar Pradesh</a></li>
+              <li><a href="#">Ministry of Home Affairs</a></li>
+              <li><a href="#">National Disaster Management Authority(NDMA)</a></li>
+              <li><a href="#">NDRF - INDIA</a></li>
+              <li><a href="#">Bhuvan - Disaster Management Support Services
+                </a></li>
+              <li><a href="#">National Institute of Disaster Management(NIDM)</a></li>
+              <li><a href="#">UP State Disaster Management Authority(UP SDMA)</a></li>
+              <li><a href="#">National Remote Sensing Centre</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright © 2025 | Developed by CMP Techsseract LLP | Powered by UPDESCO</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
